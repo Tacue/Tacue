@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="includes/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="https://friconix.com/cdn/friconix-0.1885.js"> </script>
+    <link rel="stylesheet" href="includes/type.css">
+    <title></title>
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css?family=Poppins');
+    body{
+      font-family: Poppins;
+     }
+     .main-div{
+       background-image: url(includes/display-pic.jpg);
+       background-size: cover;
+       background-attachment: fixed;
+       background-position:center center;
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+     }
+     .color-overlay{
+       padding:20px;
+      height: inherit;
+      background-color: rgba(142, 36, 170, 0.5);
+    }
+    .about-title{
+      font-weight: bold;
+    }
+    h4,h3{
+      margin-top: 0 !important;
+    }
+    .texts{
+      color: white !important;
+      font-weight: bolder !important;
+      height: 50vh;
+    }
+    .about-div{
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    .about-title{
+      font-weight: bolder !important;
+    }
+    .cards{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      height: fit-content;
+      flex-direction: row;
+    }
+    .card{
+      width: 300px;
+    }
+    #card-1{
+      border:4px solid transparent;
+      border-image: linear-gradient(0deg,#ff0,#f0f);
+      border-image-slice: 1;
+      border-radius: 5px;
+    }
+    #card-2{
+      border:4px solid transparent;
+      border-image: linear-gradient(0deg,#ff0,#f0f);
+      border-image-slice: 1;
+      border-radius: 5px;
+    }
+    #card-3{
+      border: 4px solid black;
+      border-image: linear-gradient(0deg,#ff0,#0f0);
+      border-image-slice: 1;
+      border-radius: 5px;
+    }
+    .gallery{
+      margin-top: 20px;
+      margin-bottom: 20px; 
+    }
+    .projects{
+      margin-top: 40px;
+      margin-bottom: 40px; 
+    }
+   .social-link{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .interests-title , .proj-title , .gallery-title{
+      font-weight: bold;
+    }
+    .proj-image{
+      width:100%;
+      height:100;
+    }
+    .carousel{
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="main-div">
+      <div class="color-overlay ">
+
+        <ul id="slide-out" class="sidenav">
+            <li>
+              <div class="user-view">
+                <div class="background">
+                  <img src="includes/display-pic.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="includes/display-pic.jpg"></a>
+                <a href="#name"><span class="white-text name">Shalom Muguwe</span></a>
+                <a href="#email" class="white-text"><i class="fi-xwsuxl-envelope-solid "></i>shalommuguwe@gmail.com</a>
+              </div>
+           </li>
+
+          <li><a href="#interests">My Interests</a></li>
+          <li><a href="#projects">My Projects</a></li>
+          <li><a class="#gallery" href="#!">My Gallery</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+
+        </ul>
+
+        <div class="navbar-fixed">
+          <a href="#" data-target="slide-out" class="btn-floating pulse sidenav-trigger container black"><i class="material-icons">menu</i></a>
+        </div>
+
+
+        <div class="valign-wrapper texts">
+          <div class="  text-white container center-align">
+            <h3>Hello</h3>
+            <h4>I am <span class="typed-text"></span><span class="cursor">&nbsp;</span></h4>
+          </div>
+        </div>
+
+
+        <!-- <div class="container">
+          <p>Coding is <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        </div> -->
+
+      </div>
+
+
+    </div>
+
+
+    <div id="interests" class="about-div container">
+
+      <div class="about-title container">
+        <h3 class="center-align interests-title">My interests</h3>
+      </div>
+
+      <div class="about cards">
+
+        <div class="card" id="card-1">
+          <div class="card-image">
+            <img src="includes/man united.jpg">
+            <span class="card-title">Football</span>
+          </div>
+          <div class="card-content">
+            <!-- this part is for information -->
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+
+        <div class="card" id="card-2">
+        <div class="card-image">
+          <img src="includes/photo.jpg">
+          <span class="card-title">Photography</span>
+        </div>
+        <div class="card-content">
+          <!-- this part is for information -->
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+
+
+      <div class="card" id="card-3">
+        <div class="card-image">
+          <img src="includes/prog.jpg">
+          <span class="card-title">Programming</span>
+        </div>
+        <div class="card-content">
+          <!-- this part is for information -->
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+
+
+      </div>
+
+    </div>
+
+    <div id="projects" class="projects container">
+
+      <div class="projects-title container">
+        <h3 class="center-align proj-title">My Projects</h3>
+      </div>
+
+          <ul class="collapsible">
+            <li >
+              <div class="collapsible-header"><i class="material-icons">local_dining</i>Restaurant Landing Page</div>
+              
+              <div class="collapsible-body">
+                <div class="">
+                  <img src="includes/dining.jpg" class="proj-image" alt="">
+                </div>
+                <!-- this part is for information -->
+                <span>A webpage that is designed to advertise a restaurant presenting the menus and many other things. </span>
+              </div>
+            </li>
+
+            <li >
+              <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Online Sneaker Shop</div>
+              
+              <div class="collapsible-body">
+                <div class="">
+                  <img src="includes/proj-2.jpg" class="proj-image" alt="">
+                </div>
+                <!-- this part is for information -->
+                <span>A webpage that is still in progress that acts as an e-commerce to view different sneakers and maybe even purchase</span>
+              </div>
+            </li>
+
+            <li >
+              <div class="collapsible-header"><i class="material-icons ">camera</i>Photography Portfolio</div>
+              
+              <div class="collapsible-body">
+                <div class="">
+                  <img src="includes/proj-3.jpg" class="proj-image" alt="">
+                </div>
+                <!-- this part is for information -->
+                <span>As a person who has a deep passion for Photography and taking lovely photos i display them in this project still in progress 
+                </span>
+              </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <div id="gallery" class="gallery">
+
+      <div class="carousel-title container">
+        <h3 class="center-align gallery-title" >My Gallery</h3>
+      </div>
+
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/300/300/nature/1"></a>
+        <a class="carousel-item" href="#six!"><img src="includes/prog.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/300/300/nature/2"></a>
+        <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/300/300/nature/3"></a>
+        <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/300/300/nature/4"></a>
+        <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/300/300/nature/5"></a>
+     </div>
+
+    </div>
+
+    <footer id="contacts" class="page-footer black">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Please Share your feedback!</h5>
+                <p class="grey-text text-lighten-4">Have a nice day....thank you.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text center-align">Socials</h5>
+                <ul class="social-link center-align">
+                  <li><i class=" fi-3x fi-snsuxl-facebook"></i><p> </p></li>
+                  <li><i class="fi-3x fi-snsuxl-whatsapp"></i><p></p></li>
+                  <li><i class="fi-3x fi-snsuxl-instagram"></i><p> </p></li>
+                  <li><i class="fi-3x fi-snsuxl-github"></i><p></p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2020 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">Designed by Shalom Muguwe</a>
+            </div>
+          </div>
+    </footer>
+
+
+
+    <script src="includes/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script src="includes/materialize.min.js" charset="utf-8"></script>
+    <script src="includes/init.js" charset="utf-8"></script>
+    <script src="includes/index.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+      window.sr = ScrollReveal();
+      sr.reveal('.navbar',{
+        duration: 2000,
+        origin: 'bottom'
+      });
+
+      sr.reveal('#card-1',{
+        duration: 1000,
+        origin: 'left'
+      });
+
+      sr.reveal('#card-2',{
+        duration: 1500,
+        origin: 'bottom'
+      });
+
+      sr.reveal('#card-3',{
+        duration: 2500,
+        origin: 'right'
+      });
+
+      sr.reveal('.carousel',{
+        duration: 2000,
+        origin: 'bottom'
+      });
+
+      sr.reveal('footer',{
+        duration: 2000,
+        origin: 'bottom'
+      });
+
+      })
+    </script>
+    <script>
+      let anchorlinks = document.querySelectorAll('a[href^="#"]')
+   
+   for (let item of anchorlinks) { // relitere 
+       item.addEventListener('click', (e)=> {
+           let hashval = item.getAttribute('href')
+           let target = document.querySelector(hashval)
+           target.scrollIntoView({
+               behavior: 'smooth',
+               block: 'start'
+           })
+           history.pushState(null, null, hashval)
+           e.preventDefault()
+       })
+   }
+    </script>
+
+
+  </body>
+</html>
